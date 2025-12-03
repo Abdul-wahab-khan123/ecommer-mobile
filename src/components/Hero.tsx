@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-
 import { IoArrowForward } from "react-icons/io5";
 import { FaRegEye } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
@@ -12,32 +11,32 @@ import Slider from "react-slick";
 
 export default function Hero() {
   const settings = {
-    dots: false,                // dots off
-    infinite: true,             // infinite loop
-    speed: 250,                 // animation speed
-    slidesToShow: 4,            // default slides
+    dots: false,                
+    infinite: true,           
+    speed: 250,                
+    slidesToShow: 4,            
     slidesToScroll: 1,
-    navs: true,               // show arrows
-    autoplay: true,             // auto slide
-    autoplaySpeed: 3000,        // 3 seconds
-    pauseOnHover: true,         // pause on mouse hover
+    navs: true,               
+    autoplay: true,          
+    autoplaySpeed: 3000,    
+    pauseOnHover: true,  
     responsive: [
       {
-        breakpoint: 1024,       // tablet
+        breakpoint: 1024,      
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768,        // mobile
+        breakpoint: 768,       
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480,        // small mobile
+        breakpoint: 480,     
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
