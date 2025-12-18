@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
+// @ts-ignore: allow importing global CSS without type declarations
 import "./globals.css";
 import Header from "@/Header";
 import Footer from "@/Footer";
@@ -7,7 +8,7 @@ import Footer from "@/Footer";
 // font config
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["400", "700"], // jitne weight chahiye add kar do
+  weight: ["400", "700"], // jitne weight chahiye add ka r do
 });
 
 export const metadata: Metadata = {
@@ -18,7 +19,9 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
+  
   children: React.ReactNode;
+
 }) {
   return (
     <html lang="en">

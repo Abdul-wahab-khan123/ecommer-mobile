@@ -1,50 +1,17 @@
 "use client";
 import Image from "next/image";
+import Slider1 from "@/components/Slider1"
+import Slider2 from "@/components/Slider2"
 import { IoArrowForward } from "react-icons/io5";
 import { FaRegEye } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { GoStarFill } from "react-icons/go";
-import dynamic from "next/dynamic";
+// @ts-ignore: Allow importing CSS from slick-carousel without type declarations
 import "slick-carousel/slick/slick.css";
+// @ts-ignore: Allow importing CSS from slick-carousel without type declarations
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 export default function Hero() {
-  const settings = {
-    dots: false,                
-    infinite: true,           
-    speed: 250,                
-    slidesToShow: 4,            
-    slidesToScroll: 1,
-    navs: true,               
-    autoplay: true,          
-    autoplaySpeed: 3000,    
-    pauseOnHover: true,  
-    responsive: [
-      {
-        breakpoint: 1024,      
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,       
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,     
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <div>
       {/* HERO SECTION */}
@@ -79,7 +46,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
       {/* FLASH SALES SECTION */}
       <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
         <div className="container mx-auto">
@@ -121,227 +87,219 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
           {/* SLIDER */}
           <div className="mt-15">
-            <Slider {...settings}>
-              <div>
-                <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
-                relative overflow-hidden group mb-4">
-                  <Image src="/img2.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
+            <Slider1 />
+            <div className="text-center">
+              <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-16 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* FLASH SALES SECTION */}
+      <div className="bg-white gap-4 w-full relative overflow-hidden">
+        <div className="container mx-auto py-24 border-t border-b border-[#b3b3b3]">
+          <div>
+            <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
+              <div className="inline-block w-5 h-10 bg-[var(--main-color)] mr-2 rounded-md"></div>
+              Categories
+            </h6>
+            <div className="flex items-center gap-24">
+              <h2 className="text-4xl font-semibold text-black">Browse By Category</h2>
+            </div>
+          </div>
+          {/* SLIDER */}
+          <div className="mt-15">
+            <Slider2 />
+          </div>
+        </div>
+      </div>
+      {/* FLASH SALES SECTION */}
+      <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
+        <div className="container mx-auto">
+          <div>
+            <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
+              <div className="inline-block w-5 h-10 bg-[var(--main-color)] mr-2 rounded-md"></div>
+              This Month
+            </h6>
+            <div className="flex items-center justify-between">
+              <h2 className="text-4xl font-semibold text-black">Best Selling Products</h2>
+              <div className="text-center">
+                 <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All</a>
+              </div>
+            </div>
+          </div>
+          <div className="mt-15 grid grid-cols-4 gap-8">
+            <div>
+              <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-full 
+                  relative overflow-hidden group mb-4">
+                  <Image src="/img6.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
                   <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
-                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
-                    Add To Cart
+                  font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                  Add To Cart
                   </a>
-                  <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                   <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                   justify-center items-center"><FaRegHeart /></div>
                   <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
                   justify-center items-center"><FaRegEye /></div>
-                </div>
-                <h3 className="text-xl font-semibold text-black mb-2">HAVIT HV-G92 Gamepad</h3>
-                <h4 className="text-xl font-semibold text-black mb-2">$120 <span className="ml-3 line-through text-[var(--main-color)]">$160</span></h4>
-                <div className="flex items-center gap-3 ">
+              </div>
+              <h3 className="text-xl font-semibold text-black mb-2">The north coat</h3>
+              <h4 className="text-xl font-semibold text-[var(--main-color)] mb-2">$120 <span className="ml-3 line-through text-gray-500">
+                  $160</span>
+              </h4>
+              <div className="flex items-center gap-3 ">
                   <ul className="flex items-center gap-1">
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
                   </ul>
                   <span className="text-lg font-semibold text-gray-500">(88)</span>
-                </div>
               </div>
-              <div>
-                <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
-                relative overflow-hidden group mb-4">
-                  <Image src="/img3.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                  <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
-                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
-                    Add To Cart
-                  </a>
-                  <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 35%</div>
-                  <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
+            </div>
+            <div>
+              <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-full relative overflow-hidden group mb-4">
+                <Image src="/img7.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
+                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                  Add To Cart
+                </a>
+                <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                   justify-center items-center"><FaRegHeart /></div>
-                  <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
+                <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
                   justify-center items-center"><FaRegEye /></div>
-                </div>
-                <h3 className="text-xl font-semibold text-black mb-2">AK-900 Wired Keyboard</h3>
-                <h4 className="text-xl font-semibold text-black mb-2">$960 <span className="ml-3 line-through text-[var(--main-color)]">$1160</span></h4>
-                <div className="flex items-center gap-3 ">
+              </div>
+              <h3 className="text-xl font-semibold text-black mb-2">Gucci duffle bag</h3>
+              <h4 className="text-xl font-semibold text-[var(--main-color)] mb-2">$960 <span className="ml-3 line-through text-gray-500">
+                  $1160</span>
+              </h4>
+              <div className="flex items-center gap-3 ">
                   <ul className="flex items-center gap-1">
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
                   </ul>
                   <span className="text-lg font-semibold text-gray-500">(75)</span>
-                </div>
               </div>
-              <div>
-                <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
-                relative overflow-hidden group mb-4">
-                  <Image src="/img4.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
+            </div>
+            <div>
+              <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-full 
+              relative overflow-hidden group mb-4">
+                  <Image src="/img8.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
                   <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
-                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
-                    Add To Cart
+                  font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                  Add To Cart
                   </a>
-                  <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                   <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                   justify-center items-center"><FaRegHeart /></div>
                   <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
                   justify-center items-center"><FaRegEye /></div>
-                </div>
-                <h3 className="text-xl font-semibold text-black mb-2">IPS LCD Gaming Monitor</h3>
-                <h4 className="text-xl font-semibold text-black mb-2">$370 <span className="ml-3 line-through text-[var(--main-color)]">$400</span></h4>
-                <div className="flex items-center gap-3 ">
+              </div>
+              <h3 className="text-xl font-semibold text-black mb-2">RGB liquid CPU Cooler</h3>
+              <h4 className="text-xl font-semibold text-[var(--main-color)] mb-2">$370 <span className="ml-3 line-through text-gray-500">$400</span>
+              </h4>
+              <div className="flex items-center gap-3 ">
                   <ul className="flex items-center gap-1">
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
                   </ul>
                   <span className="text-lg font-semibold text-gray-500">(99)</span>
-                </div>
               </div>
-              <div>
-                <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
-                relative overflow-hidden group mb-4">
-                  <Image src="/img5.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
+            </div>
+            <div>
+              <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-full 
+              relative overflow-hidden group mb-4">
+                  <Image src="/img9.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
                   <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
-                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
-                    Add To Cart
+                  font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                  Add To Cart
                   </a>
-                  <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                   <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                   justify-center items-center"><FaRegHeart /></div>
                   <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
                   justify-center items-center"><FaRegEye /></div>
-                </div>
-                <h3 className="text-xl font-semibold text-black mb-2">S-Series Comfort Chair</h3>
-                <h4 className="text-xl font-semibold text-black mb-2">$375 <span className="ml-3 line-through text-[var(--main-color)]">$400</span></h4>
-                <div className="flex items-center gap-3 ">
+              </div>
+              <h3 className="text-xl font-semibold text-black mb-2">Small BookSelf</h3>
+              <h4 className="text-xl font-semibold text-[var(--main-color)] mb-2">$375 <span className="ml-3 line-through text-gray-500">$400</span></h4>
+              <div className="flex items-center gap-3 ">
                   <ul className="flex items-center gap-1">
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
+                  <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
                   </ul>
                   <span className="text-lg font-semibold text-gray-500">(99)</span>
-                </div>
               </div>
-              <div>
-                <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
-                relative overflow-hidden group mb-4">
-                  <Image src="/img2.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                  <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
-                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
-                    Add To Cart
-                  </a>
-                  <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
-                  <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
-                  justify-center items-center"><FaRegHeart /></div>
-                  <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
-                  justify-center items-center"><FaRegEye /></div>
-                </div>
-                <h3 className="text-xl font-semibold text-black mb-2">HAVIT HV-G92 Gamepad</h3>
-                <h4 className="text-xl font-semibold text-black mb-2">$120 <span className="ml-3 line-through text-[var(--main-color)]">$160</span></h4>
-                <div className="flex items-center gap-3 ">
-                  <ul className="flex items-center gap-1">
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                  </ul>
-                  <span className="text-lg font-semibold text-gray-500">(88)</span>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
-                relative overflow-hidden group mb-4">
-                  <Image src="/img3.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                  <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
-                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
-                    Add To Cart
-                  </a>
-                  <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 35%</div>
-                  <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
-                  justify-center items-center"><FaRegHeart /></div>
-                  <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
-                  justify-center items-center"><FaRegEye /></div>
-                </div>
-                <h3 className="text-xl font-semibold text-black mb-2">AK-900 Wired Keyboard</h3>
-                <h4 className="text-xl font-semibold text-black mb-2">$960 <span className="ml-3 line-through text-[var(--main-color)]">$1160</span></h4>
-                <div className="flex items-center gap-3 ">
-                  <ul className="flex items-center gap-1">
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                  </ul>
-                  <span className="text-lg font-semibold text-gray-500">(75)</span>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
-                relative overflow-hidden group mb-4">
-                  <Image src="/img4.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                  <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
-                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
-                    Add To Cart
-                  </a>
-                  <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
-                  <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
-                  justify-center items-center"><FaRegHeart /></div>
-                  <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
-                  justify-center items-center"><FaRegEye /></div>
-                </div>
-                <h3 className="text-xl font-semibold text-black mb-2">IPS LCD Gaming Monitor</h3>
-                <h4 className="text-xl font-semibold text-black mb-2">$370 <span className="ml-3 line-through text-[var(--main-color)]">$400</span></h4>
-                <div className="flex items-center gap-3 ">
-                  <ul className="flex items-center gap-1">
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                  </ul>
-                  <span className="text-lg font-semibold text-gray-500">(99)</span>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
-                relative overflow-hidden group mb-4">
-                  <Image src="/img5.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                  <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
-                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
-                    Add To Cart
-                  </a>
-                  <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
-                  <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
-                  justify-center items-center"><FaRegHeart /></div>
-                  <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
-                  justify-center items-center"><FaRegEye /></div>
-                </div>
-                <h3 className="text-xl font-semibold text-black mb-2">S-Series Comfort Chair</h3>
-                <h4 className="text-xl font-semibold text-black mb-2">$375 <span className="ml-3 line-through text-[var(--main-color)]">$400</span></h4>
-                <div className="flex items-center gap-3 ">
-                  <ul className="flex items-center gap-1">
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                    <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-                  </ul>
-                  <span className="text-lg font-semibold text-gray-500">(99)</span>
-                </div>
-              </div>
-            </Slider>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Enhance SECTION */}
+      <div className="gap-4 w-full py-24">
+        <div className="container mx-auto bg-black grid grid-cols-2 gap-2.5 items-center px-14 py-5 rounded-2xl relative overflow-hidden">
+          <div>
+            <h6 className="text-xl font-semibold text-[var(--main-color)] mb-10 flex items-center gap-2.5">
+              Categories
+            </h6>
+            <h1 className="text-[background] font-bold text-7xl mb-9">
+                Enhance Your Music Experience
+            </h1>
+            <div className="flex items-center gap-4 mb-9">
+                <h3 className="text-xl font-bold text-black bg-white rounded-full w-20 h-20 flex justify-center items-center flex-col">
+                  03
+                  <span className="block text-sm font-semibold">Days</span>
+                </h3>
+                <h3 className="text-xl font-bold text-black bg-white rounded-full w-20 h-20 flex justify-center items-center flex-col">
+                  23
+                  <span className="block text-sm font-semibold">Hours</span>
+                </h3>
+                <h3 className="text-xl font-bold text-black bg-white rounded-full w-20 h-20 flex justify-center items-center flex-col">
+                  19
+                  <span className="block text-sm font-semibold">Minutes</span>
+                </h3>
+                <h3 className="text-xl font-bold text-black bg-white rounded-full w-20 h-20 flex justify-center items-center flex-col">
+                  56
+                  <span className="block text-sm font-semibold">Seconds</span>
+                </h3>
+            </div>
+              <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] px-12 py-4 rounded-md inline-block hover:bg-white hover:text-black transition-all duration-600 ease-in-out">Buy Now!</a>
+          </div>
+          <div className="relative overflow-hidden flex items-center justify-center">
+            <div className="bg-[#D9D9D9] rounded-full blur-2xl opacity-[0.3] h-[500px] w-[500px] absolute"></div>
+            <Image
+              src="/img10.png"
+              width={900}
+              height={480}
+              alt="Picture"
+              className="h-[600px] w-full object-contain relative"
+            />
+          </div>
+        </div>
+      </div>
+      {/* FLASH SALES SECTION */}
+      <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
+        <div className="container mx-auto">
+          <div>
+            <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
+              <div className="inline-block w-5 h-10 bg-[var(--main-color)] mr-2 rounded-md"></div>
+              Our Products
+            </h6>
+            <div className="flex items-center gap-24">
+              <h2 className="text-4xl font-semibold text-black">Explore Our Products</h2>
+            </div>
+          </div>
+          {/* SLIDER */}
+          <div className="mt-15">
+            <Slider1 />
+            <div className="text-center">
+              <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-16 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All Products</a>
+            </div>
           </div>
         </div>
       </div>
