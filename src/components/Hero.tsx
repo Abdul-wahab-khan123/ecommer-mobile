@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Slider1 from "@/components/Slider1"
 import Slider2 from "@/components/Slider2"
+import Slider3 from "@/components/Slider3"
 import { IoArrowForward } from "react-icons/io5";
 import { FaRegEye } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
@@ -96,7 +97,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      {/* FLASH SALES SECTION */}
+      {/* Browse SECTION */}
       <div className="bg-white gap-4 w-full relative overflow-hidden">
         <div className="container mx-auto py-24 border-t border-b border-[#b3b3b3]">
           <div>
@@ -114,7 +115,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      {/* FLASH SALES SECTION */}
+      {/* Best Selling Products */}
       <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
         <div className="container mx-auto">
           <div>
@@ -282,7 +283,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      {/* FLASH SALES SECTION */}
+      {/* Explore Our Products */}
       <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
         <div className="container mx-auto">
           <div>
@@ -296,9 +297,35 @@ export default function Hero() {
           </div>
           {/* SLIDER */}
           <div className="mt-15">
-            <Slider1 />
+            <Slider3 />
             <div className="text-center">
               <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-16 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* New Arrival */}
+      <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
+        <div className="container mx-auto">
+          <div>
+            <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
+              <div className="inline-block w-5 h-10 bg-[var(--main-color)] mr-2 rounded-md"></div>
+              Featured
+            </h6>
+            <div className="flex items-center gap-24">
+              <h2 className="text-4xl font-semibold text-black">New Arrival</h2>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-8 items-center mt-16">
+            <div>
+              <Image src="/img11.png" width={570} height={600} alt="Picture" className="h-full w-full object-cover"/>
+            </div>
+            <div>
+              <Image src="/img12.png" width={570} height={300} alt="Picture" className="h-full w-full object-cover"/>
+              <div className="flex gap-8 mt-8">
+                <Image src="/img13.svg" width={100} height={200} alt="Picture" className="h-full w-full object-cover"/>
+                <Image src="/img14.png" width={570} height={200} alt="Picture" className="h-full w-full object-cover"/>
+              </div>
             </div>
           </div>
         </div>
