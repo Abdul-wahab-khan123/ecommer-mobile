@@ -48,7 +48,7 @@ export default function Hero() {
         </div>
       </div>
       {/* FLASH SALES SECTION */}
-      <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
+      <div className="gap-4 w-full relative overflow-hidden py-24">
         <div className="container mx-auto">
           <div>
             <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
@@ -98,7 +98,7 @@ export default function Hero() {
         </div>
       </div>
       {/* Browse SECTION */}
-      <div className="bg-white gap-4 w-full relative overflow-hidden">
+      <div className="gap-4 w-full relative overflow-hidden">
         <div className="container mx-auto py-24 border-t border-b border-[#b3b3b3]">
           <div>
             <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
@@ -116,7 +116,7 @@ export default function Hero() {
         </div>
       </div>
       {/* Best Selling Products */}
-      <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
+      <div className="gap-4 w-full relative overflow-hidden py-24">
         <div className="container mx-auto">
           <div>
             <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
@@ -284,7 +284,7 @@ export default function Hero() {
         </div>
       </div>
       {/* Explore Our Products */}
-      <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
+      <div className="gap-4 w-full relative overflow-hidden py-24">
         <div className="container mx-auto">
           <div>
             <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
@@ -305,7 +305,7 @@ export default function Hero() {
         </div>
       </div>
       {/* New Arrival */}
-      <div className="bg-white gap-4 w-full relative overflow-hidden py-24">
+      <div className="gap-4 w-full relative overflow-hidden py-24">
         <div className="container mx-auto">
           <div>
             <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
@@ -317,16 +317,101 @@ export default function Hero() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 items-center mt-16">
-            <div>
-              <Image src="/img11.png" width={570} height={600} alt="Picture" className="h-full w-full object-cover"/>
-            </div>
-            <div>
-              <Image src="/img12.png" width={570} height={300} alt="Picture" className="h-full w-full object-cover"/>
-              <div className="flex gap-8 mt-8">
-                <Image src="/img13.svg" width={100} height={200} alt="Picture" className="h-full w-full object-cover"/>
-                <Image src="/img14.png" width={570} height={200} alt="Picture" className="h-full w-full object-cover"/>
+            <div className="relative">
+              <Image src="/img11.svg" width={570} height={600} alt="Picture" className="h-full w-full object-cover"/>
+              <div className="absolute bottom-10 left-10">
+                <h4 className="text-white text-3xl font-semibold mb-2">PlayStation 5</h4>
+                <p className="text-white text-lg font-light mb-2">Black and White version of the PS5 <br></br> coming out on sale.
+                </p>
+                <a href="#" className="text-white text-xl font-normal underline">
+                  Shop Now
+                </a>
               </div>
             </div>
+            <div>
+              <div className="relative">
+              <Image src="/img12.svg" width={570} height={300} alt="Picture" className="h-full w-full object-cover"/>
+                <div className="absolute bottom-10 left-10">
+                    <h4 className="text-white text-3xl font-semibold mb-2">Women’s Collections</h4>
+                    <p className="text-white text-lg font-light mb-2">Featured woman collections that<br></br> give you another vibe.</p>
+                    <a href="#" className="text-white text-xl font-normal underline">
+                      Shop Now
+                    </a>
+                </div>
+              </div>
+              <div className="flex gap-8 mt-8">
+                <div className="relative w-full">
+                   <Image src="/img13.svg" width={100} height={200} alt="Picture" className="h-full w-full object-cover"/>
+                   <div className="absolute bottom-10 left-10">
+                      <h4 className="text-white text-3xl font-semibold mb-2">Speakers</h4>
+                      <p className="text-white text-lg font-light mb-2">Amazon wireless speakers</p>
+                      <a href="#" className="text-white text-xl font-normal underline">
+                        Shop Now
+                      </a>
+                    </div>
+                </div>
+                <div className="relative w-full">
+                   <Image src="/img14.svg" width={570} height={200} alt="Picture" className="h-full w-full object-cover"/>
+                   <div className="absolute bottom-10 left-10">
+                        <h4 className="text-white text-3xl font-semibold mb-2">Perfume</h4>
+                        <p className="text-white text-lg font-light mb-2">GUCCI INTENSE OUD EDP</p>
+                        <a href="#" className="text-white text-xl font-normal underline">
+                          Shop Now
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* choose */}
+      <div className="gap-4 w-full relative overflow-hidden py-24">
+        <div className="container mx-auto grid grid-cols-3 gap-4 items-center">
+          <div className="flex items-center justify-center flex-col">
+            <div className="bg-[#c1c1c1] w-[100px] h-[100px] flex items-center justify-center rounded-full mb-6">
+              <div className="bg-black w-[80px] h-[80px] flex items-center justify-center rounded-full">
+                 <Image
+                    src="/svg/icon1.svg"
+                    width={50}
+                    height={50}
+                    alt="Picture"
+                    className="h-[50px] w-[50px] object-cover"
+                  />
+              </div>
+            </div>
+            <h4 className="text-black text-xl font-semibold mb-1.5">FREE AND FAST DELIVERY</h4>
+            <p className="text-lg">Free delivery for all orders over $140</p>
+          </div>
+          <div className="flex items-center justify-center flex-col">
+            <div className="bg-[#c1c1c1] w-[100px] h-[100px] flex items-center justify-center rounded-full mb-6">
+              <div className="bg-black w-[80px] h-[80px] flex items-center justify-center rounded-full">
+                 <Image
+                    src="/svg/icon2.svg"
+                    width={50}
+                    height={50}
+                    alt="Picture"
+                    className="h-[50px] w-[50px] object-cover"
+                  />
+              </div>
+            </div>
+            <h4 className="text-black text-xl font-semibold mb-1.5">24/7 CUSTOMER SERVICE</h4>
+            <p className="text-lg">Friendly 24/7 customer support</p>
+          </div>
+          <div className="flex items-center justify-center flex-col">
+            <div className="bg-[#c1c1c1] w-[100px] h-[100px] flex items-center justify-center rounded-full mb-6">
+              <div className="bg-black w-[80px] h-[80px] flex items-center justify-center rounded-full">
+                 <Image
+                    src="/svg/icon3.svg"
+                    width={50}
+                    height={50}
+                    alt="Picture"
+                    className="h-[50px] w-[50px] object-cover"
+                  />
+              </div>
+            </div>
+            <h4 className="text-black text-xl font-semibold mb-1.5">MONEY BACK GUARANTEE</h4>
+            <p className="text-lg">We reurn money within 30 days</p>
           </div>
         </div>
       </div>

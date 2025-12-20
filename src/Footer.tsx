@@ -53,11 +53,11 @@ const Footer = () => {
           <p className="text-gray-400 text-base mb-4">Save $3 with App New User Only</p>
           <div className="mx-auto grid grid-cols-2 gap-2 mb-8">
             <div>
-              <Image src="/Qrcode.png"width={100} height={100} alt="Picture of the author" 
+              <Image src="/svg/Qrcode.svg"width={100} height={100} alt="Picture of the author" 
               className="h-[100px] w-full object-contain"/>
             </div>
             <div>
-              <Image src="/google.png"width={100} height={100} alt="Picture of the author" 
+              <Image src="/svg/google.svg"width={100} height={100} alt="Picture of the author" 
               className="h-[100px] w-full object-contain"/>
             </div>
           </div>
