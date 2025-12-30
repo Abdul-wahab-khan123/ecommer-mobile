@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <header className="absolute overflow-hidden w-full z-10 bg-white">
+    <header className="absolute overflow-hidden w-full z-10 bg-white border-b border-b-gray-400">
       <div className="flex justify-center items-center py-4 w-full overflow-hidden bg-black text-center">
         <div className="flex justify-center items-center gap-5 w-[70%]">
           <p className="text-xl font-medium text-white m-0">
@@ -29,28 +29,28 @@ const Header = () => {
           </option>
         </select>
       </div>
-      <div className="container mx-auto flex justify-between items-center py-7 border-b border-b-gray-400">
+      <div className="container mx-auto flex justify-between items-center py-7">
         <div>
           <h1 className="text-3xl font-bold">LOGO HERE</h1>
         </div>
         <ul className="flex justify-center items-center gap-8">
           <li>
-            <a href="javascript:;" className="text-xl font-[600] border-b-2 border-(--main-color)">
+            <a href="./" className="text-xl font-[600] border-b-2 border-(--main-color)">
               Home
             </a>
           </li>
           <li>
-            <a href="Javascript:;" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
+            <a href="/about" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
               About
             </a>
           </li>
           <li>
-            <a href="Javascript:;" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
+            <a href="./contact" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
               Contact
             </a>
           </li>
           <li>
-            <a href="Javascript:;" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
+            <a href="./signup" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
               Sign Up
             </a>
           </li>

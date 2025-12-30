@@ -284,7 +284,7 @@ export default function Hero() {
         </div>
       </div>
       {/* Explore Our Products */}
-      <div className="gap-4 w-full relative overflow-hidden py-24">
+      <div className="gap-4 w-full relative overflow-hidden pt-24">
         <div className="container mx-auto">
           <div>
             <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
@@ -305,7 +305,7 @@ export default function Hero() {
         </div>
       </div>
       {/* New Arrival */}
-      <div className="gap-4 w-full relative overflow-hidden py-24">
+      <div className="gap-4 w-full relative overflow-hidden pt-24">
         <div className="container mx-auto">
           <div>
             <h6 className="text-base font-semibold text-[var(--main-color)] mb-6 flex items-center gap-2.5">
@@ -317,8 +317,8 @@ export default function Hero() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 items-center mt-16">
-            <div className="relative">
-              <Image src="/img11.svg" width={570} height={600} alt="Picture" className="h-full w-full object-cover"/>
+            <div className="relative overflow-hidden rounded-xl">
+              <Image src="/img11.svg" width={570} height={600} alt="Picture" className="h-full w-full object-cover transition-all duration-600 ease-in-out hover:scale-[1.1]"/>
               <div className="absolute bottom-10 left-10">
                 <h4 className="text-white text-3xl font-semibold mb-2">PlayStation 5</h4>
                 <p className="text-white text-lg font-light mb-2">Black and White version of the PS5 <br></br> coming out on sale.
@@ -329,8 +329,8 @@ export default function Hero() {
               </div>
             </div>
             <div>
-              <div className="relative">
-              <Image src="/img12.svg" width={570} height={300} alt="Picture" className="h-full w-full object-cover"/>
+              <div className="relative overflow-hidden rounded-xl">
+              <Image src="/img12.svg" width={570} height={300} alt="Picture" className="h-full w-full object-cover transition-all duration-600 ease-in-out hover:scale-[1.1]"/>
                 <div className="absolute bottom-10 left-10">
                     <h4 className="text-white text-3xl font-semibold mb-2">Women’s Collections</h4>
                     <p className="text-white text-lg font-light mb-2">Featured woman collections that<br></br> give you another vibe.</p>
@@ -340,8 +340,8 @@ export default function Hero() {
                 </div>
               </div>
               <div className="flex gap-8 mt-8">
-                <div className="relative w-full">
-                   <Image src="/img13.svg" width={100} height={200} alt="Picture" className="h-full w-full object-cover"/>
+                <div className="relative w-full overflow-hidden rounded-xl">
+                   <Image src="/img13.svg" width={100} height={200} alt="Picture" className="h-full w-full object-cover transition-all duration-600 ease-in-out hover:scale-[1.1]"/>
                    <div className="absolute bottom-10 left-10">
                       <h4 className="text-white text-3xl font-semibold mb-2">Speakers</h4>
                       <p className="text-white text-lg font-light mb-2">Amazon wireless speakers</p>
@@ -350,8 +350,8 @@ export default function Hero() {
                       </a>
                     </div>
                 </div>
-                <div className="relative w-full">
-                   <Image src="/img14.svg" width={570} height={200} alt="Picture" className="h-full w-full object-cover"/>
+                <div className="relative w-full overflow-hidden rounded-xl">
+                   <Image src="/img14.svg" width={570} height={200} alt="Picture" className="h-full w-full object-cover transition-all duration-600 ease-in-out hover:scale-[1.1]"/>
                    <div className="absolute bottom-10 left-10">
                         <h4 className="text-white text-3xl font-semibold mb-2">Perfume</h4>
                         <p className="text-white text-lg font-light mb-2">GUCCI INTENSE OUD EDP</p>
@@ -366,7 +366,7 @@ export default function Hero() {
         </div>
       </div>
       {/* choose */}
-      <div className="gap-4 w-full relative overflow-hidden py-24">
+      <div className="gap-4 w-full relative overflow-hidden py-26">
         <div className="container mx-auto grid grid-cols-3 gap-4 items-center">
           <div className="flex items-center justify-center flex-col">
             <div className="bg-[#c1c1c1] w-[100px] h-[100px] flex items-center justify-center rounded-full mb-6">
