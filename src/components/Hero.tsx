@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <div>
       {/* HERO SECTION */}
-      <div className="bg-black gap-4 w-full h-[100vh] relative overflow-hidden pt-52">
+      <div className="bg-black gap-4 w-full h-[100vh] relative overflow-hidden pt-24">
         <div className="container mx-auto grid grid-cols-2 gap-2.5 items-center">
           <div>
             <div className="flex items-center gap-2.5 mb-4">

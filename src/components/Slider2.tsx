@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
 import React from "react";

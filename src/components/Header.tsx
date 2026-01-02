@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <header className="absolute overflow-hidden w-full z-10 bg-white border-b border-b-gray-400">
+    <header className="relative overflow-hidden w-full z-10 bg-white border-b border-b-gray-400">
       <div className="flex justify-center items-center py-4 w-full overflow-hidden bg-black text-center">
         <div className="flex justify-center items-center gap-5 w-[70%]">
           <p className="text-xl font-medium text-white m-0">
