@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
@@ -35,24 +36,24 @@ const Header = () => {
         </div>
         <ul className="flex justify-center items-center gap-8">
           <li>
-            <a href="./" className="text-xl font-[600] border-b-2 border-(--main-color)">
+            <Link href="/" className="text-xl font-[600] border-b-2 border-(--main-color)">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
+            <Link href="/about" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="./contact" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
+            <Link href="/contact" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="./signup" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
+            <Link href="/signup" className="text-xl font-semibold border-b-2 border-transparent hover:border-(--main-color) duration-300 ease-in-out">
               Sign Up
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="flex justify-center items-center gap-6">
@@ -61,8 +62,12 @@ const Header = () => {
               className="bg-[#F5F5F5] py-3 pl-4 pr-14 rounded-md text-lg font-medium w-full outline-none" />
             <FiSearch className="absolute right-3 text-2xl top-1/2 -translate-y-1/2 text-black font-semibold" />
           </div>
-          <FaRegHeart className="text-2xl text-black font-semibold" />
-          <FiShoppingCart className="text-2xl text-black font-semibold" />
+          <Link href="/wishlist">
+             <FaRegHeart className="text-2xl text-black font-semibold" />
+          </Link>
+          <Link href="/cart">
+            <FiShoppingCart className="text-2xl text-black font-semibold" />
+          </Link>
         </div>
       </div>
     </header>

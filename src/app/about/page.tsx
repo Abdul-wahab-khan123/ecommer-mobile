@@ -34,7 +34,7 @@ export default function Home() {
                         width={900}
                         height={565}
                         alt="Picture"
-                        className="h-[565px] w-full object-cover"
+                        className="h-[565px] w-full object-cover rounded-lg"
                     />
                 </div>
             </div>
