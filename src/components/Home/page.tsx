@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import Slider1 from "@/components/Slider1"
-import Slider2 from "@/components/Slider2"
-import Slider3 from "@/components/Slider3"
+import Slider1 from "@/components/slider/Slider1"
+import Slider2 from "@/components/slider/Slider2"
+import Slider3 from "@/components/slider/Slider3"
 import { IoArrowForward } from "react-icons/io5";
 import { FaRegEye } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";

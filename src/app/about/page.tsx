@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Team from "@/components/Team";
+import Team from "@/components/slider/Team";
 // @ts-ignore: Allow importing CSS from slick-carousel without type declarations
 import "slick-carousel/slick/slick.css";
 // @ts-ignore: Allow importing CSS from slick-carousel without type declarations

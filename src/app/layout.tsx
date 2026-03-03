@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 // @ts-ignore: allow importing global CSS without type declarations
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/app/Header";
+import Footer from "@/app/Footer";
 
 // font config
 const lato = Lato({

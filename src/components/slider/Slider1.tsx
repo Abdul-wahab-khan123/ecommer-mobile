@@ -28,7 +28,6 @@ export default function SimpleSlider() {
       </div>
     );
   }
-
   const settings = {
     dots: false,
     infinite: true,
@@ -65,7 +64,7 @@ export default function SimpleSlider() {
       },
     ],
   };
-
+  
   return (
     <Slider {...settings}>
         <div>
@@ -87,14 +86,14 @@ export default function SimpleSlider() {
               $160</span>
           </h4>
           <div className="flex items-center gap-3 ">
-              <ul className="flex items-center gap-1">
+            <ul className="flex items-center gap-1">
               <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
               <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
               <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
               <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
               <li className="text-xl font-medium text-[#FFAD33]"><GoStarFill /></li>
-              </ul>
-              <span className="text-lg font-semibold text-gray-500">(88)</span>
+            </ul>
+            <span className="text-lg font-semibold text-gray-500">(88)</span>
           </div>
         </div>
         <div>

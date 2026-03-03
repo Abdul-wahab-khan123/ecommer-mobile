@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { LuSendHorizontal } from "react-icons/lu";
 import { RiFacebookLine } from "react-icons/ri";
 import { RiTwitterXLine } from "react-icons/ri";
@@ -24,28 +25,28 @@ const Footer = () => {
         <div>
           <h4 className="text-2xl font-semibold text-white mb-5">Account</h4>
           <ul className="flex flex-col gap-3">
-            <li><a href="javascript:;" className="text-white text-lg">My Account</a></li>
-            <li><a href="javascript:;" className="text-white text-lg">Login / Register</a></li>
-            <li><a href="javascript:;" className="text-white text-lg">Cart</a></li>
-            <li><a href="javascript:;" className="text-white text-lg">Wishlist</a></li>
-            <li><a href="javascript:;" className="text-white text-lg">Shop</a></li>
+            <li><Link href="javascript:;" className="text-white text-lg">My Account</Link></li>
+            <li><Link href="javascript:;" className="text-white text-lg">Login / Register</Link></li>
+            <li><Link href="javascript:;" className="text-white text-lg">Cart</Link></li>
+            <li><Link href="javascript:;" className="text-white text-lg">Wishlist</Link></li>
+            <li><Link href="javascript:;" className="text-white text-lg">Shop</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="text-2xl font-semibold text-white mb-6">Quick Link</h4>
           <ul className="flex flex-col gap-3">
-            <li><a href="javascript:;" className="text-white text-lg">Privacy Policy</a></li>
-            <li><a href="javascript:;" className="text-white text-lg">Terms Of Use</a></li>
-            <li><a href="javascript:;" className="text-white text-lg">FAQ</a></li>
-            <li><a href="javascript:;" className="text-white text-lg">Contact</a></li>
+            <li><Link href="javascript:;" className="text-white text-lg">Privacy Policy</Link></li>
+            <li><Link href="javascript:;" className="text-white text-lg">Terms Of Use</Link></li>
+            <li><Link href="javascript:;" className="text-white text-lg">FAQ</Link></li>
+            <li><Link href="javascript:;" className="text-white text-lg">Contact</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="text-2xl font-semibold text-white mb-6">Support</h4>
           <ul className="flex flex-col gap-3">
-            <li><a href="javascript:;" className="text-white text-lg">111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</a></li>
-            <li><a href="javascript:;" className="text-white text-lg">exclusive@gmail.com</a></li>
-            <li><a href="javascript:;" className="text-white text-lg">+88015-88888-9999</a></li>
+            <li><Link href="javascript:;" className="text-white text-lg">111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</Link></li>
+            <li><Link href="javascript:;" className="text-white text-lg">exclusive@gmail.com</Link></li>
+            <li><Link href="javascript:;" className="text-white text-lg">+88015-88888-9999</Link></li>
           </ul>
         </div>
         <div>
@@ -62,10 +63,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex">
-              <a href="javascript:;" className="text-2xl font-semibold text-white h-14 w-14 rounded-full flex items-center justify-center transition-all duration-600 ease-in-out hover:bg-white hover:text-black"><RiFacebookLine /></a>
-              <a href="javascript:;" className="text-2xl font-semibold text-white h-14 w-14 rounded-full flex items-center justify-center transition-all duration-600 ease-in-out hover:bg-white hover:text-black"><RiTwitterXLine /></a>
-              <a href="javascript:;" className="text-2xl font-semibold text-white h-14 w-14 rounded-full flex items-center justify-center transition-all duration-600 ease-in-out hover:bg-white hover:text-black"><FiInstagram /></a>
-              <a href="javascript:;" className="text-2xl font-semibold text-white h-14 w-14 rounded-full flex items-center justify-center transition-all duration-600 ease-in-out hover:bg-white hover:text-black"><RiLinkedinLine /></a>
+              <Link href="javascript:;" className="text-2xl font-semibold text-white h-14 w-14 rounded-full flex items-center justify-center transition-all duration-600 ease-in-out hover:bg-white hover:text-black"><RiFacebookLine /></Link>
+              <Link href="javascript:;" className="text-2xl font-semibold text-white h-14 w-14 rounded-full flex items-center justify-center transition-all duration-600 ease-in-out hover:bg-white hover:text-black"><RiTwitterXLine /></Link>
+              <Link href="javascript:;" className="text-2xl font-semibold text-white h-14 w-14 rounded-full flex items-center justify-center transition-all duration-600 ease-in-out hover:bg-white hover:text-black"><FiInstagram /></Link>
+              <Link href="javascript:;" className="text-2xl font-semibold text-white h-14 w-14 rounded-full flex items-center justify-center transition-all duration-600 ease-in-out hover:bg-white hover:text-black"><RiLinkedinLine /></Link>
             </div>
         </div>
       </div>
