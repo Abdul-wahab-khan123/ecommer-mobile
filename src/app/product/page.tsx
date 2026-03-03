@@ -112,7 +112,7 @@ export default function CustomPaging() {
                 </div>
               </div>
               <div className="flex items-center gap-6 py-6 px-4">
-                <Image src="/svg/icon-delivery.svg" alt="img" width={60} height={60} className="h-[60px] 
+                <Image src="/svg/Icon-return.svg" alt="img" width={60} height={60} className="h-[60px] 
                 w-[60px] object-contain"/>
                 <div>
                   <h3 className="text-black text-2xl font-bold mb-2">Return Delivery</h3>
