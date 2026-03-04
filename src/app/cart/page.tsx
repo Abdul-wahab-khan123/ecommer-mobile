@@ -46,14 +46,14 @@ export default function CartTable() {
         </div>
         <div className="container mx-auto">
           <table className="w-full table-fixed border-separate border-spacing-y-10">
-            <thead>
-              <tr className="bg-white rounded-lg shadow-[0_4px_12px_rgba(0,0,0,0.1)]">
-                <th className="text-left py-8 px-10 w-1/4">Product</th>
-                <th className="text-center py-8 px-10 w-1/4">Price</th>
-                <th className="text-center py-8 px-10 w-1/4">Quantity</th>
-                <th className="text-end py-8 px-10 w-1/4">Subtotal</th>
-              </tr>
-            </thead>
+                <thead>
+                <tr className="bg-white rounded-lg shadow-[0_4px_12px_rgba(0,0,0,0.1)]">
+                    <th className="text-left py-8 px-10 w-1/4">Product</th>
+                    <th className="text-center py-8 px-10 w-1/4">Price</th>
+                    <th className="text-center py-8 px-10 w-1/4">Quantity</th>
+                    <th className="text-end py-8 px-10 w-1/4">Subtotal</th>
+                </tr>
+                </thead>
                 <tbody>
                 {items.map((item) => (
                     <tr key={item.id} className="bg-white rounded-lg shadow-[0_4px_12px_rgba(0,0,0,0.1)]">
@@ -114,7 +114,7 @@ export default function CartTable() {
                     <li className="text-black text-xl font-medium">$1750</li>
                 </ul>
                 <div className="text-center">
-                    <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-8 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> Procees to checkout</a>
+                    <a href="checkout" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-8 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out">Procees to checkout</a>
                 </div>
             </div>
           </div>

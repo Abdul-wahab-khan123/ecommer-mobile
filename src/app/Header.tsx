@@ -25,9 +25,6 @@ const Header = () => {
           <option value="" className="text-black text-xl">
             Pakistan
           </option>
-          <option value="" className="text-black text-xl">
-            India
-          </option>
         </select>
       </div>
       <div className="container mx-auto flex justify-between items-center py-7">
