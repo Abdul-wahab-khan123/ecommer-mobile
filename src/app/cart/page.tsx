@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaAngleUp } from "react-icons/fa6";
 import { FaAngleDown } from "react-icons/fa6";
@@ -114,7 +115,7 @@ export default function CartTable() {
                     <li className="text-black text-xl font-medium">$1750</li>
                 </ul>
                 <div className="text-center">
-                    <a href="checkout" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-8 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out">Procees to checkout</a>
+                    <Link href="checkout" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-8 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out">Procees to checkout</Link>
                 </div>
             </div>
           </div>
