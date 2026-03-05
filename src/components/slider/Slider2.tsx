@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
 import React from "react";
@@ -74,84 +75,84 @@ export default function SimpleSlider() {
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/phone.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Phones </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Phones </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/comp.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Computers </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Computers </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/watch.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> SmartWatch </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> SmartWatch </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/camera.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Camera </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Camera </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/headphone.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> HeadPhones </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> HeadPhones </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/gamepad.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Gaming </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Gaming </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/phone.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Phones </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Phones </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/comp.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Computers </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Computers </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/watch.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> SmartWatch </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> SmartWatch </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/camera.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Camera </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Camera </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/headphone.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> HeadPhones </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> HeadPhones </Link>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col border border-[#b3b3b3] rounded-lg
         h-full w-[90%] py-6 relative overflow-hidden mb-4 group transition-all duration-600 ease-in-out hover:bg-[var(--main-color)] hover:border-[var(--main-color)]">
           <Image src="/svg/gamepad.svg" alt="img" width={80} height={80} className="h-[80px] w-[80px] object-cover mb-4 transition-all duration-600 ease-in-out group-hover:brightness-0 group-hover:invert"/>
-          <a href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Gaming </a>
+          <Link href="javascript:;" className="text-black text-center text-lg font-medium transition-all duration-600 ease-in-out group-hover:text-white"> Gaming </Link>
         </div>
       </div>
     </Slider>

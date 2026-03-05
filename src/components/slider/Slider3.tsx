@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { FaRegEye } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { GoStarFill } from "react-icons/go";
@@ -72,10 +73,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
                 relative overflow-hidden group mb-4">
                 <Image src="/img2.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -99,10 +100,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] mt-16 
                 relative overflow-hidden group mb-4">
                 <Image src="/img2.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -127,9 +128,9 @@ export default function SimpleSlider() {
         <div>
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] relative overflow-hidden group mb-4">
                 <Image src="/img3.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 35%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -152,9 +153,9 @@ export default function SimpleSlider() {
             </div>
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] mt-16 relative overflow-hidden group mb-4">
                 <Image src="/img3.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 35%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -180,10 +181,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
             relative overflow-hidden group mb-4">
                 <Image src="/img4.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -206,10 +207,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] mt-16
             relative overflow-hidden group mb-4">
                 <Image src="/img4.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -234,10 +235,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
             relative overflow-hidden group mb-4">
                 <Image src="/img5.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -259,10 +260,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] mt-16
             relative overflow-hidden group mb-4">
                 <Image src="/img5.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -286,10 +287,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
                 relative overflow-hidden group mb-4">
                 <Image src="/img2.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -313,10 +314,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] mt-16
                 relative overflow-hidden group mb-4">
                 <Image src="/img2.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -341,9 +342,9 @@ export default function SimpleSlider() {
         <div>
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] relative overflow-hidden group mb-4">
                 <Image src="/img3.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 35%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -366,9 +367,9 @@ export default function SimpleSlider() {
             </div>
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] mt-16 relative overflow-hidden group mb-4">
                 <Image src="/img3.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 35%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -394,10 +395,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
             relative overflow-hidden group mb-4">
                 <Image src="/img4.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -420,10 +421,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] mt-16 
             relative overflow-hidden group mb-4">
                 <Image src="/img4.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -448,10 +449,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] 
             relative overflow-hidden group mb-4">
                 <Image src="/img5.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -473,10 +474,10 @@ export default function SimpleSlider() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[90%] mt-16 
             relative overflow-hidden group mb-4">
                 <Image src="/img5.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>

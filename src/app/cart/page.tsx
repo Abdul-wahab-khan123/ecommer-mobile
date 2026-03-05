@@ -4,10 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaAngleUp } from "react-icons/fa6";
 import { FaAngleDown } from "react-icons/fa6";
-// @ts-ignore: Allow importing CSS from slick-carousel without type declarations
-import "slick-carousel/slick/slick.css";
-// @ts-ignore: Allow importing CSS from slick-carousel without type declarations
-import "slick-carousel/slick/slick-theme.css";
 
 export default function CartTable() {
     const [items, setItems] = useState([
@@ -34,16 +30,15 @@ export default function CartTable() {
 
   return (
     <div>
-      {/* HERO SECTION */}
       <div className="gap-4 w-full relative overflow-hidden py-24">
         <div className="container mx-auto flex items-center gap-3 mb-20">
-          <a href="./" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">
+          <Link href="./" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">
             Home
-          </a>
+          </Link>
           <span className="text-xl font-medium text-[#7f7f7f]">/</span>
-          <a href="/cart" className="text-xl font-medium text-black">
+          <Link href="/cart" className="text-xl font-medium text-black">
             Cart
-          </a>
+          </Link>
         </div>
         <div className="container mx-auto">
           <table className="w-full table-fixed border-separate border-spacing-y-10">
@@ -88,9 +83,9 @@ export default function CartTable() {
                 </tbody>
           </table>
           <div className="mt-8 flex justify-between gap-4">
-            <a href="/shop" className="border text-lg font-semibold text-black px-12 py-4 rounded-md inline-block hover:bg-black hover:text-white transition-all duration-600 ease-in-out">
+            <Link href="/shop" className="border text-lg font-semibold text-black px-12 py-4 rounded-md inline-block hover:bg-black hover:text-white transition-all duration-600 ease-in-out">
                 Return To Shop
-            </a>
+            </Link>
             <button className="border text-lg font-semibold text-black px-12 py-4 rounded-md inline-block hover:bg-black hover:text-white transition-all duration-600 ease-in-out">
                 Update Cart
             </button>

@@ -1,20 +1,21 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Team from "@/components/slider/Team";
 // @ts-ignore: Allow importing CSS from slick-carousel without type declarations
 import "slick-carousel/slick/slick.css";
 // @ts-ignore: Allow importing CSS from slick-carousel without type declarations
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Home() {
+export default function about() {
   return (
      <div>
         {/* HERO SECTION */}
         <div className="gap-4 w-full h-[100vh] relative overflow-hidden pt-20">
             <div className="container mx-auto flex items-center gap-3 mb-10">
-                <a href="./" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Home</a>
+                <Link href="./" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Home</Link>
                 <span className="text-xl font-medium text-[#7f7f7f]">/</span>
-                <a href="/about" className="text-xl font-medium text-black">About</a>
+                <Link href="/about" className="text-xl font-medium text-black">About</Link>
             </div>
             <div className="container mx-auto grid grid-cols-2 gap-2.5 items-center">
                 <div>

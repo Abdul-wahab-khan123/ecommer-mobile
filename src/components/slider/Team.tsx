@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FiInstagram } from "react-icons/fi";
 import { RiLinkedinLine } from "react-icons/ri";
@@ -75,9 +76,9 @@ export default function SimpleSlider() {
                 <h4 className="text-black text-3xl font-bold mb-1.5">Tom Cruise</h4>
                 <p className="text-xl leading-8 text-black mb-5">Founder & Chairman</p>
                 <div className="flex gap-4">
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></a>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></Link>
                 </div>
             </div>
         </div>
@@ -89,9 +90,9 @@ export default function SimpleSlider() {
                 <h4 className="text-black text-3xl font-bold mb-1.5">Emma Watson</h4>
                 <p className="text-xl leading-8 text-black mb-5">Managing Director</p>
                 <div className="flex gap-4">
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></a>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></Link>
                 </div>
             </div>
         </div>
@@ -103,9 +104,9 @@ export default function SimpleSlider() {
                 <h4 className="text-black text-3xl font-bold mb-1.5">Will Smith</h4>
                 <p className="text-xl leading-8 text-black mb-5">Product Designer</p>
                 <div className="flex gap-4">
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></a>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></Link>
                 </div>
             </div>
         </div>
@@ -117,9 +118,9 @@ export default function SimpleSlider() {
                 <h4 className="text-black text-3xl font-bold mb-1.5">Tom Cruise</h4>
                 <p className="text-xl leading-8 text-black mb-5">Founder & Chairman</p>
                 <div className="flex gap-4">
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></a>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></Link>
                 </div>
             </div>
         </div>
@@ -131,9 +132,9 @@ export default function SimpleSlider() {
                 <h4 className="text-black text-3xl font-bold mb-1.5">Emma Watson</h4>
                 <p className="text-xl leading-8 text-black mb-5">Managing Director</p>
                 <div className="flex gap-4">
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></a>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></Link>
                 </div>
             </div>
         </div>
@@ -145,9 +146,9 @@ export default function SimpleSlider() {
                 <h4 className="text-black text-3xl font-bold mb-1.5">Will Smith</h4>
                 <p className="text-xl leading-8 text-black mb-5">Product Designer</p>
                 <div className="flex gap-4">
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></a>
-                    <a href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></a>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiTwitterXLine /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><FiInstagram /></Link>
+                    <Link href="javascript:;" className="text-2xl font-semibold text-black transition-all duration-600 ease-in-out"><RiLinkedinLine /></Link>
                 </div>
             </div>
         </div>

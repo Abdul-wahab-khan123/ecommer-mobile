@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { baseUrl } from "./config";
 import React from "react";
 import Slider from "react-slick";
@@ -8,12 +9,8 @@ import { FaRegEye } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa6";
 import { FiPlus } from "react-icons/fi";
-// @ts-ignore: Allow importing CSS from slick-carousel without type declarations
-import "slick-carousel/slick/slick.css";
-// @ts-ignore: Allow importing CSS from slick-carousel without type declarations
-import "slick-carousel/slick/slick-theme.css";
 
-export default function CustomPaging() {
+export default function product() {
   const settings = {
     customPaging: (i: number) => (
       <div className="w-40 h-36 bg-[#f5f5f5] p-5 cursor-pointer">
@@ -32,11 +29,11 @@ export default function CustomPaging() {
     <div>
       <div className="py-20">
         <div className="container mx-auto flex items-center gap-3 pb-20">
-            <a href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Account</a>
+            <Link href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Account</Link>
             <span className="text-xl font-medium text-[#7f7f7f]">/</span>
-            <a href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Gaming</a>
+            <Link href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Gaming</Link>
             <span className="text-xl font-medium text-[#7f7f7f]">/</span>
-            <a href="javascript:;" className="text-xl font-medium text-black">Havic HV G-92 Gamepad</a>
+            <Link href="javascript:;" className="text-xl font-medium text-black">Havic HV G-92 Gamepad</Link>
         </div>
         <div className="container mx-auto grid grid-cols-3 gap-4 items-center">
           <div className="slider-container product-slider max-w-xl col-span-2">
@@ -99,8 +96,8 @@ export default function CustomPaging() {
                         <FiPlus />
                     </button>
                 </div>
-                <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] px-14 h-full rounded-lg flex items-center justify-center hover:bg-black transition-all duration-600 ease-in-out">Buy Now</a>
-                <a href="javascript:;" className="text-3xl font-semibold text-black px-4 h-full rounded-lg border-2 border-[#7f7f7f] flex items-center justify-center"><FaRegHeart /></a>
+                <Link href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] px-14 h-full rounded-lg flex items-center justify-center hover:bg-black transition-all duration-600 ease-in-out">Buy Now</Link>
+                <Link href="javascript:;" className="text-3xl font-semibold text-black px-4 h-full rounded-lg border-2 border-[#7f7f7f] flex items-center justify-center"><FaRegHeart /></Link>
             </div>
             <div className="border-2 border-[#7f7f7f] rounded-lg">
               <div className="flex items-center gap-6 py-6 px-4 border-b-2 border-[#7f7f7f]">
@@ -137,10 +134,10 @@ export default function CustomPaging() {
               <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[100%] 
                   relative overflow-hidden group mb-4">
                   <Image src="/img2.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                  <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                  <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                   Add To Cart
-                  </a>
+                  </Link>
                   <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                   <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                   justify-center items-center"><FaRegHeart /></div>
@@ -165,9 +162,9 @@ export default function CustomPaging() {
             <div>
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[100%] relative overflow-hidden group mb-4">
                 <Image src="/img3.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 35%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -193,10 +190,10 @@ export default function CustomPaging() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[100%] 
             relative overflow-hidden group mb-4">
                 <Image src="/img4.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>
@@ -221,10 +218,10 @@ export default function CustomPaging() {
             <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-[100%] 
             relative overflow-hidden group mb-4">
                 <Image src="/img5.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                 font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                 Add To Cart
-                </a>
+                </Link>
                 <div className="text-base absolute top-4 left-4 text-white bg-[var(--main-color)] px-3 py-1 rounded"> - 40%</div>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                 justify-center items-center"><FaRegHeart /></div>

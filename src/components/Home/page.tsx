@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Slider1 from "@/components/slider/Slider1"
 import Slider2 from "@/components/slider/Slider2"
 import Slider3 from "@/components/slider/Slider3"
@@ -12,7 +13,7 @@ import "slick-carousel/slick/slick.css";
 // @ts-ignore: Allow importing CSS from slick-carousel without type declarations
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Hero() {
+export default function Home() {
   return (
     <div>
       {/* HERO SECTION */}
@@ -32,9 +33,9 @@ export default function Hero() {
             <h1 className="text-[background] font-bold text-9xl mb-16">
               Up to 10% off Voucher
             </h1>
-            <a href="#" className="flex items-center gap-1.5 text-white text-2xl font-normal">
+            <Link href="#" className="flex items-center gap-1.5 text-white text-2xl font-normal">
               Shop Now <IoArrowForward className="text-2xl" />
-            </a>
+            </Link>
           </div>
           <div>
             <Image
@@ -92,7 +93,7 @@ export default function Hero() {
           <div className="mt-15">
             <Slider1 />
             <div className="text-center">
-              <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-16 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All Products</a>
+              <Link href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-16 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All Products</Link>
             </div>
           </div>
         </div>
@@ -126,7 +127,7 @@ export default function Hero() {
             <div className="flex items-center justify-between">
               <h2 className="text-4xl font-semibold text-black">Best Selling Products</h2>
               <div className="text-center">
-                 <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All</a>
+                 <Link href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All</Link>
               </div>
             </div>
           </div>
@@ -135,10 +136,10 @@ export default function Hero() {
               <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-full 
                   relative overflow-hidden group mb-4">
                   <Image src="/img6.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                  <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                  <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                   Add To Cart
-                  </a>
+                  </Link>
                   <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                   justify-center items-center"><FaRegHeart /></div>
                   <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
@@ -162,9 +163,9 @@ export default function Hero() {
             <div>
               <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-full relative overflow-hidden group mb-4">
                 <Image src="/img7.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
+                <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                   Add To Cart
-                </a>
+                </Link>
                 <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                   justify-center items-center"><FaRegHeart /></div>
                 <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
@@ -189,10 +190,10 @@ export default function Hero() {
               <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-full 
               relative overflow-hidden group mb-4">
                   <Image src="/img8.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                  <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                  <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                   Add To Cart
-                  </a>
+                  </Link>
                   <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                   justify-center items-center"><FaRegHeart /></div>
                   <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
@@ -216,10 +217,10 @@ export default function Hero() {
               <div className="flex justify-center items-center bg-[#F5F5F5] rounded-lg h-[270px] w-full 
               relative overflow-hidden group mb-4">
                   <Image src="/img9.png" alt="img" width={170} height={150} className="h-[170px] w-[150px] object-contain"/>
-                  <a href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
+                  <Link href="javascript:;" className="absolute bottom-[-45px] w-full bg-black text-white text-center text-lg
                   font-medium py-2 transition-all duration-600 ease-in-out group-hover:bottom-0">
                   Add To Cart
-                  </a>
+                  </Link>
                   <div className="text-xl absolute top-4 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex 
                   justify-center items-center"><FaRegHeart /></div>
                   <div className="text-xl absolute top-16 right-4 text-black bg-white h-[40px] w-[40px] rounded-full flex
@@ -269,7 +270,7 @@ export default function Hero() {
                   <span className="block text-sm font-semibold">Seconds</span>
                 </h3>
             </div>
-              <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] px-12 py-4 rounded-md inline-block hover:bg-white hover:text-black transition-all duration-600 ease-in-out">Buy Now!</a>
+              <Link href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] px-12 py-4 rounded-md inline-block hover:bg-white hover:text-black transition-all duration-600 ease-in-out">Buy Now!</Link>
           </div>
           <div className="relative overflow-hidden flex items-center justify-center">
             <div className="bg-[#D9D9D9] rounded-full blur-2xl opacity-[0.3] h-[500px] w-[500px] absolute"></div>
@@ -299,7 +300,7 @@ export default function Hero() {
           <div className="mt-15">
             <Slider3 />
             <div className="text-center">
-              <a href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-16 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All Products</a>
+              <Link href="javascript:;" className="text-lg font-semibold text-white bg-[var(--main-color)] mt-16 px-12 py-4 rounded-md inline-block hover:bg-black transition-all duration-600 ease-in-out"> View All Products</Link>
             </div>
           </div>
         </div>
@@ -323,9 +324,9 @@ export default function Hero() {
                 <h4 className="text-white text-3xl font-semibold mb-2">PlayStation 5</h4>
                 <p className="text-white text-lg font-light mb-2">Black and White version of the PS5 <br></br> coming out on sale.
                 </p>
-                <a href="#" className="text-white text-xl font-normal underline">
+                <Link href="#" className="text-white text-xl font-normal underline">
                   Shop Now
-                </a>
+                </Link>
               </div>
             </div>
             <div>
@@ -334,20 +335,20 @@ export default function Hero() {
                 <div className="absolute bottom-10 left-10">
                     <h4 className="text-white text-3xl font-semibold mb-2">Women’s Collections</h4>
                     <p className="text-white text-lg font-light mb-2">Featured woman collections that<br></br> give you another vibe.</p>
-                    <a href="#" className="text-white text-xl font-normal underline">
+                    <Link href="#" className="text-white text-xl font-normal underline">
                       Shop Now
-                    </a>
+                    </Link>
                 </div>
               </div>
               <div className="flex gap-8 mt-8">
                 <div className="relative w-full overflow-hidden rounded-xl">
-                   <Image src="/img13.svg" width={100} height={200} alt="Picture" className="h-full w-full object-cover transition-all duration-600 ease-in-out hover:scale-[1.1]"/>
+                  <Image src="/img13.svg" width={100} height={200} alt="Picture" className="h-full w-full object-cover transition-all duration-600 ease-in-out hover:scale-[1.1]"/>
                    <div className="absolute bottom-10 left-10">
                       <h4 className="text-white text-3xl font-semibold mb-2">Speakers</h4>
                       <p className="text-white text-lg font-light mb-2">Amazon wireless speakers</p>
-                      <a href="#" className="text-white text-xl font-normal underline">
+                      <Link href="#" className="text-white text-xl font-normal underline">
                         Shop Now
-                      </a>
+                      </Link>
                     </div>
                 </div>
                 <div className="relative w-full overflow-hidden rounded-xl">
@@ -355,9 +356,9 @@ export default function Hero() {
                    <div className="absolute bottom-10 left-10">
                         <h4 className="text-white text-3xl font-semibold mb-2">Perfume</h4>
                         <p className="text-white text-lg font-light mb-2">GUCCI INTENSE OUD EDP</p>
-                        <a href="#" className="text-white text-xl font-normal underline">
+                        <Link href="#" className="text-white text-xl font-normal underline">
                           Shop Now
-                        </a>
+                        </Link>
                     </div>
                 </div>
               </div>

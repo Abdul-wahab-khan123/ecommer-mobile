@@ -1,28 +1,23 @@
 "use client";
 import Image from "next/image";
-import { FiPhone } from "react-icons/fi";
-import { MdOutlineMailOutline } from "react-icons/md";
-// @ts-ignore: Allow importing CSS from slick-carousel without type declarations
-import "slick-carousel/slick/slick.css";
-// @ts-ignore: Allow importing CSS from slick-carousel without type declarations
-import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
-export default function Home() {
+export default function checkout() {
   return (
      <div>
         {/* HERO SECTION */}
         <div className="gap-4 w-full relative overflow-hidden py-20">
             <div className="container mx-auto flex items-center gap-3 mb-20">
-                <a href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Account</a>
+                <Link href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Account</Link>
                 <span className="text-xl font-medium text-[#7f7f7f]">/</span>
-                <a href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out 
-                hover:text-black">My Account</a>
+                <Link href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out 
+                hover:text-black">My Account</Link>
                 <span className="text-xl font-medium text-[#7f7f7f]">/</span>
-                <a href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Product</a>
+                <Link href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">Product</Link>
                 <span className="text-xl font-medium text-[#7f7f7f]">/</span>
-                <a href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">View Cart</a>
+                <Link href="javascript:;" className="text-xl font-medium text-[#7f7f7f] transition-all duration-600 ease-in-out hover:text-black">View Cart</Link>
                 <span className="text-xl font-medium text-[#7f7f7f]">/</span>
-                <a href="/checkout" className="text-xl font-medium text-black">CheckOut</a>
+                <Link href="/checkout" className="text-xl font-medium text-black">CheckOut</Link>
             </div>
             <div className="container mx-auto grid grid-cols-2 items-center gap-36">
                 <div>

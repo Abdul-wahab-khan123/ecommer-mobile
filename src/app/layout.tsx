@@ -33,6 +33,7 @@ export default function RootLayout({
     <html lang="en">
       {/* 👇 yahan font apply ho gaya puri body par */}
       <body className={`${lato.className} antialiased`}>
+        
         <Header />
         {children}
         <Footer />
